@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		276FE908223507C9009C4469 /* WebViewContent.html in Resources */ = {isa = PBXBuildFile; fileRef = 276FE907223507C9009C4469 /* WebViewContent.html */; };
 		3A821154B031CA6661EF8B4A /* libPods-getting-started-ios-sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0982F4391F7C4D323383C9E /* libPods-getting-started-ios-sdk.a */; };
-		D2B49D7C2234F7A500110A1C /* railway.gif in Resources */ = {isa = PBXBuildFile; fileRef = D2B49D7B2234F7A500110A1C /* railway.gif */; };
+		D243C7272235B00E00F39FAF /* WebViewContent.html in Resources */ = {isa = PBXBuildFile; fileRef = D243C7262235B00D00F39FAF /* WebViewContent.html */; };
+		D243C7292235B01C00F39FAF /* road.gif in Resources */ = {isa = PBXBuildFile; fileRef = D243C7282235B01C00F39FAF /* road.gif */; };
 		F80D616C21AF45E2002D3A16 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D616B21AF45E2002D3A16 /* Constants.swift */; };
 		F811532E21A39ABF00CB55E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F811532D21A39ABF00CB55E4 /* AppDelegate.swift */; };
 		F811533021A39ABF00CB55E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F811532F21A39ABF00CB55E4 /* ViewController.swift */; };
@@ -20,10 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		276FE907223507C9009C4469 /* WebViewContent.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = WebViewContent.html; path = "../../../../../Downloads/Video-Background-GIF-master/VideoBackground.swift/VideoBackground.swift/WebViewContent.html"; sourceTree = "<group>"; };
 		644BE443C27F5EC802992935 /* Pods-getting-started-ios-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-getting-started-ios-sdk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-getting-started-ios-sdk/Pods-getting-started-ios-sdk.debug.xcconfig"; sourceTree = "<group>"; };
 		B0982F4391F7C4D323383C9E /* libPods-getting-started-ios-sdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-getting-started-ios-sdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2B49D7B2234F7A500110A1C /* railway.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = railway.gif; sourceTree = "<group>"; };
+		D243C7262235B00D00F39FAF /* WebViewContent.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = WebViewContent.html; path = "../../../../../Documents/GitHub/Video-Background-GIF/VideoBackground.swift/VideoBackground.swift/WebViewContent.html"; sourceTree = "<group>"; };
+		D243C7282235B01C00F39FAF /* road.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = road.gif; sourceTree = "<group>"; };
 		E1A5F95BB1700A236BA41E78 /* Pods-getting-started-ios-sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-getting-started-ios-sdk.release.xcconfig"; path = "Pods/Target Support Files/Pods-getting-started-ios-sdk/Pods-getting-started-ios-sdk.release.xcconfig"; sourceTree = "<group>"; };
 		F80D616B21AF45E2002D3A16 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F811532A21A39ABF00CB55E4 /* getting-started-ios-sdk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "getting-started-ios-sdk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,7 +60,7 @@
 		D2B49D7A2234F75800110A1C /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				D2B49D7B2234F7A500110A1C /* railway.gif */,
+				D243C7282235B01C00F39FAF /* road.gif */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -98,9 +98,9 @@
 				F811532D21A39ABF00CB55E4 /* AppDelegate.swift */,
 				F811532F21A39ABF00CB55E4 /* ViewController.swift */,
 				F811533121A39ABF00CB55E4 /* Main.storyboard */,
-				276FE907223507C9009C4469 /* WebViewContent.html */,
 				F811533421A39AC500CB55E4 /* Assets.xcassets */,
 				F811533621A39AC500CB55E4 /* LaunchScreen.storyboard */,
+				D243C7262235B00D00F39FAF /* WebViewContent.html */,
 				F811533921A39AC500CB55E4 /* Info.plist */,
 				F863D73121A92CD700C1FDC2 /* InfoViewController.swift */,
 				F80D616B21AF45E2002D3A16 /* Constants.swift */,
@@ -167,10 +167,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				276FE908223507C9009C4469 /* WebViewContent.html in Resources */,
-				D2B49D7C2234F7A500110A1C /* railway.gif in Resources */,
+				D243C7272235B00E00F39FAF /* WebViewContent.html in Resources */,
 				F811533821A39AC500CB55E4 /* LaunchScreen.storyboard in Resources */,
 				F811533521A39AC500CB55E4 /* Assets.xcassets in Resources */,
+				D243C7292235B01C00F39FAF /* road.gif in Resources */,
 				F811533321A39ABF00CB55E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
