@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Dosis|Quicksand" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="/static/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9kaMla5IjCGGXVvkiBpaurYO5sBr31gs&libraries=places"></script>
+
+    <title>Car Share</title>
+  </head>
+  <body>
+    <!--NAV BAR-->
+    <div id="1" class="home page-section">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light fixed-top">
+
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" ></span>
+          </button>
+
+          <a class="navbar-brand" style="font-size: 1.2em;" href="/home">CAR share</a>
+      
+          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav mr-auto" style="padding: 1em;">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="/home">Home<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#2">Share your ride</a>
+                  </li>
+                  <li class="nav-item">
+                          <a class="nav-link" href="#3">Learn more</a>
+                  </li>
+                  <li class="nav-item">
+                          <a class="nav-link" href="#4">Login</a>
+                  </li>
+                  <li class="nav-item">
+                          <a class="nav-link" href="#5">Sign up</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+
+        <!--Landing Page-->
+        <div class="jumbotron1 home">
+            <div class="container text-white">
+                <div class="row">
+                    <div class="col-lg bg-light result shadow-lg">
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="card" style="width: 18rem; " >
+                                    <img class="card-img-top" src="/static/img/teslaS.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{year}} {{make}} {{model}}</h5>
+                                        <p class="card-text">Click here for vehicle information</p>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                            View
+                                        </button>
+                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                                    <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">{{year}} {{make}} {{model}}</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img class="card-img-top" src="/static/img/teslaS.jpg" alt="Card image cap">
+                                                        Location: {{latitude}}, {{longitude}}
+
+                                                        <div id="map"></div>
+                                                        <script>
+                                                        var map;
+                                                        function initMap() {
+                                                            map = new google.maps.Map(document.getElementById('map'), {
+                                                            center: {lat: -34.397, lng: 150.644},
+                                                            zoom: 8
+                                                            });
+                                                        }
+                                                        </script>
+                                                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9kaMla5IjCGGXVvkiBpaurYO5sBr31gs&callback=initMap"
+                                                        async defer></script>
+
+                                                        <br>
+                                                        Mileage: {{miles}}
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Select</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card" style="width: 18rem; opacity: .6;">
+                                    <img class="card-img-top" src="/static/img/teslaX.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">2020 Example 3</h5>
+                                        <p class="card-text">Click here for vehicle information</p>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" disabled>
+                                            View
+                                        </button>
+                                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Select</button>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card" style="width: 18rem; opacity: .6;">
+                                    <img class="card-img-top" src="/static/img/tesla3.jpeg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">2021 Example 4</h5>
+                                        <p class="card-text">Click here for vehicle information</p>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" disabled>
+                                            View
+                                        </button>
+                                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Select</button>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>  
+    
+    <div class="container">
+      <footer style="padding: 1em;">
+        <p>© Copyright Car Share 2019-20</p>
+      </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

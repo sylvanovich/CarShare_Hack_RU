@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D7C4F64D7CFAD0D3449FD0E9148CA2 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF093C583C856C58719B43F439852216 /* MultipartFormData.swift */; };
+		089E0855D492AA75EDE128ECAB2D8DE8 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65499BAC1A974522B771B008EE5FED21 /* ParameterEncoding.swift */; };
+		0AE27BD14EEC9BA21CC2E9E1ADFAE25E /* SmartcarAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 525EA1FCE4F107BF2CA34514378B7C79 /* SmartcarAuth-dummy.m */; };
+		28A69A8EB6BF8C4D2CFDF332CC028C28 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6467819C81ADBAD58B0B6FF2F3BAA1 /* TaskDelegate.swift */; };
+		3CF594EACD8E9BFC65FC9E8BE9263419 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4BB5B4B99C185E7E6F8A002D0FDDE2 /* SessionDelegate.swift */; };
+		44E5669195C1AB51DA4B42D132345086 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C995E70EB881B7D0B23ECF5C6411700F /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4C98CA0597F576A1B63ED6699DF9F9A1 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279D8DF01055490B0E16085057D19FBA /* SessionManager.swift */; };
+		5B7D03764E70EDF352E925E944621267 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739032D41F8550EC30A394B09C515E7F /* Request.swift */; };
+		5BB972084B353D9B128F0F611599E5BB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC9BA919A4218125B7AAE78F8D0BC98 /* Result.swift */; };
+		7674125C181CDE8B9FE4B85313B79AEC /* SmartcarAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF29CC5FB31CBD134F2BC1270D3191ED /* SmartcarAuth.swift */; };
+		86A769DC9F05E9EEE3AC7C68186E4D46 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E1734BB30B59FFA48849E6B1C87DD8 /* Validation.swift */; };
+		A144D7447184B4E6347DC020132C7315 /* SmartcarAuth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C24C98CD8469F1529448B159FF91901 /* SmartcarAuth-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A2C5600C37504535771CFDC78C7E8522 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F3BF8E089702E31FDB4FF86F845C45 /* Alamofire.swift */; };
+		A8D4EB2BC77E03F7CD9667FD097590DF /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732E98DDF2CFE7F6DE67C5E99BE724AF /* DispatchQueue+Alamofire.swift */; };
+		A938CE13F0474CDBEA4B257892C71D01 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E6F42A107F70402DA8FB25E3C7245C /* ResponseSerialization.swift */; };
+		AC64B0F7E0C0A01AF03984E6ED9CE529 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 577BB5DA21E677C388012E242C459B17 /* Alamofire-dummy.m */; };
+		AD3078722FBB3C9437FEE8766EB7931D /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9878A1ED1B44166699940EF93AA73 /* NetworkReachabilityManager.swift */; };
+		B1828624B7D1908635EE541D7C8531DC /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCBE0FC9331A3F017B80B04F80172EA /* ServerTrustPolicy.swift */; };
+		C3F5B81A53D8EDD45A6580F78C337030 /* AuthorizationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43C55EA679220470D25C0AB368484FD /* AuthorizationError.swift */; };
+		D23E7627F6FD41428783FC32AF500239 /* Pods-getting-started-ios-sdk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF0A0EAA95918252C6890F86047C8AF /* Pods-getting-started-ios-sdk-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D3D0BAC2F595E90AAD24FD34AEAC6E16 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319F99E299B4CE62B482A804B932E84C /* Timeline.swift */; };
+		D7DBF20C1AD8F9D2B1DC175498F48B70 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8887991CC30D8851C28596E1EB9AA5 /* Notifications.swift */; };
+		F100F738A340780B4C86C6D10AF7F0EE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022D838871A52FA96361729E6993204 /* AFError.swift */; };
+		F198A805C56CE26BF4540420171FA682 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAA13720190A665C7062AE939A10AF6 /* Response.swift */; };
+		F45135ADCC9A904CF394CE13E8680048 /* Pods-getting-started-ios-sdk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BA9854E4E8155DB03BF68AA8B37B8C /* Pods-getting-started-ios-sdk-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D7F93FB448A528C531364543686918C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C3EA339723D774EBAD3008FDE6EB10D;
+			remoteInfo = SmartcarAuth;
+		};
+		BFFA2941595F5D09FA3944365FCE7A1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4D8460531B09D9A74533900AD241700;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BC9BA919A4218125B7AAE78F8D0BC98 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		1022D838871A52FA96361729E6993204 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		1FF0A0EAA95918252C6890F86047C8AF /* Pods-getting-started-ios-sdk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-getting-started-ios-sdk-umbrella.h"; sourceTree = "<group>"; };
+		279D8DF01055490B0E16085057D19FBA /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		27E6F42A107F70402DA8FB25E3C7245C /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		319F99E299B4CE62B482A804B932E84C /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		37EF104031D50200B9D81FDF75DDA396 /* Pods-getting-started-ios-sdk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-getting-started-ios-sdk.modulemap"; sourceTree = "<group>"; };
+		3C24C98CD8469F1529448B159FF91901 /* SmartcarAuth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmartcarAuth-umbrella.h"; sourceTree = "<group>"; };
+		525EA1FCE4F107BF2CA34514378B7C79 /* SmartcarAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SmartcarAuth-dummy.m"; sourceTree = "<group>"; };
+		577BB5DA21E677C388012E242C459B17 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		65499BAC1A974522B771B008EE5FED21 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		6B35CE467DB455AB3938F3371F5595BB /* Pods-getting-started-ios-sdk-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-getting-started-ios-sdk-acknowledgements.plist"; sourceTree = "<group>"; };
+		732E98DDF2CFE7F6DE67C5E99BE724AF /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		739032D41F8550EC30A394B09C515E7F /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		745C1523F9A0912319F523ED8BD5DF24 /* Pods-getting-started-ios-sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-getting-started-ios-sdk.release.xcconfig"; sourceTree = "<group>"; };
+		77CDDD80FE6BAF2E50B8E47285E023C3 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		81F9878A1ED1B44166699940EF93AA73 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		8C9AAC9D77AD1B72BB5E232B2222FEDD /* Pods-getting-started-ios-sdk-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-getting-started-ios-sdk-acknowledgements.markdown"; sourceTree = "<group>"; };
+		901C70B87201DBC23137A1C335210CF9 /* SmartcarAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SmartcarAuth.modulemap; sourceTree = "<group>"; };
+		96A147D8682CB02DF9A86F4AB92236FC /* SmartcarAuth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SmartcarAuth.xcconfig; sourceTree = "<group>"; };
+		9C17D663E2CFCAC78F3267952C6686C1 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E4BB5B4B99C185E7E6F8A002D0FDDE2 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		A7E1734BB30B59FFA48849E6B1C87DD8 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		A8F3BF8E089702E31FDB4FF86F845C45 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		A9D2B054B743FAD9E4DB0F279B9A4E7A /* Pods-getting-started-ios-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-getting-started-ios-sdk.debug.xcconfig"; sourceTree = "<group>"; };
+		AB8887991CC30D8851C28596E1EB9AA5 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		B028FFD5065A8A67507516DF1BA29D2A /* libPods-getting-started-ios-sdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-getting-started-ios-sdk.a"; path = "libPods-getting-started-ios-sdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE6467819C81ADBAD58B0B6FF2F3BAA1 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		BF29CC5FB31CBD134F2BC1270D3191ED /* SmartcarAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SmartcarAuth.swift; path = SmartcarAuth/SmartcarAuth.swift; sourceTree = "<group>"; };
+		C43C55EA679220470D25C0AB368484FD /* AuthorizationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthorizationError.swift; path = SmartcarAuth/AuthorizationError.swift; sourceTree = "<group>"; };
+		C995E70EB881B7D0B23ECF5C6411700F /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		CD8530AE7F62157A19BB69DCA7D63355 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAlamofire.a; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE792C936A68480225362CAA8FEACBB0 /* libSmartcarAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSmartcarAuth.a; path = libSmartcarAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA91A1866C3642A1DCD9FEB0782955A /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		DAAA13720190A665C7062AE939A10AF6 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		EFCBE0FC9331A3F017B80B04F80172EA /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		F5BA9854E4E8155DB03BF68AA8B37B8C /* Pods-getting-started-ios-sdk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-getting-started-ios-sdk-dummy.m"; sourceTree = "<group>"; };
+		F9BDD9D927AA4FCA0573BE31592E86B0 /* SmartcarAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmartcarAuth-prefix.pch"; sourceTree = "<group>"; };
+		FF093C583C856C58719B43F439852216 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21CB9F3E6DF86D415C5FA8C2383496D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92B95E87A2681FB8D38FE6CAE1DA0009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4BF6F2717CE38348B61615518FCD939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B51962220BB958972E79B3AFD9F45C3 /* Pods-getting-started-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				37EF104031D50200B9D81FDF75DDA396 /* Pods-getting-started-ios-sdk.modulemap */,
+				8C9AAC9D77AD1B72BB5E232B2222FEDD /* Pods-getting-started-ios-sdk-acknowledgements.markdown */,
+				6B35CE467DB455AB3938F3371F5595BB /* Pods-getting-started-ios-sdk-acknowledgements.plist */,
+				F5BA9854E4E8155DB03BF68AA8B37B8C /* Pods-getting-started-ios-sdk-dummy.m */,
+				1FF0A0EAA95918252C6890F86047C8AF /* Pods-getting-started-ios-sdk-umbrella.h */,
+				A9D2B054B743FAD9E4DB0F279B9A4E7A /* Pods-getting-started-ios-sdk.debug.xcconfig */,
+				745C1523F9A0912319F523ED8BD5DF24 /* Pods-getting-started-ios-sdk.release.xcconfig */,
+			);
+			name = "Pods-getting-started-ios-sdk";
+			path = "Target Support Files/Pods-getting-started-ios-sdk";
+			sourceTree = "<group>";
+		};
+		1FD002D25F6F59A1430EF1386A6F3130 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				901C70B87201DBC23137A1C335210CF9 /* SmartcarAuth.modulemap */,
+				96A147D8682CB02DF9A86F4AB92236FC /* SmartcarAuth.xcconfig */,
+				525EA1FCE4F107BF2CA34514378B7C79 /* SmartcarAuth-dummy.m */,
+				F9BDD9D927AA4FCA0573BE31592E86B0 /* SmartcarAuth-prefix.pch */,
+				3C24C98CD8469F1529448B159FF91901 /* SmartcarAuth-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SmartcarAuth";
+			sourceTree = "<group>";
+		};
+		29BC8BD4AB06A37F7FA3454DCC1E7078 /* SmartcarAuth */ = {
+			isa = PBXGroup;
+			children = (
+				C43C55EA679220470D25C0AB368484FD /* AuthorizationError.swift */,
+				BF29CC5FB31CBD134F2BC1270D3191ED /* SmartcarAuth.swift */,
+				1FD002D25F6F59A1430EF1386A6F3130 /* Support Files */,
+			);
+			name = SmartcarAuth;
+			path = SmartcarAuth;
+			sourceTree = "<group>";
+		};
+		4A0B33110355D9C202C33331E2FDF47A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BBD91589A2016B50F7AB538C1F2A28F /* Alamofire */,
+				29BC8BD4AB06A37F7FA3454DCC1E7078 /* SmartcarAuth */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4BBD91589A2016B50F7AB538C1F2A28F /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				1022D838871A52FA96361729E6993204 /* AFError.swift */,
+				A8F3BF8E089702E31FDB4FF86F845C45 /* Alamofire.swift */,
+				732E98DDF2CFE7F6DE67C5E99BE724AF /* DispatchQueue+Alamofire.swift */,
+				FF093C583C856C58719B43F439852216 /* MultipartFormData.swift */,
+				81F9878A1ED1B44166699940EF93AA73 /* NetworkReachabilityManager.swift */,
+				AB8887991CC30D8851C28596E1EB9AA5 /* Notifications.swift */,
+				65499BAC1A974522B771B008EE5FED21 /* ParameterEncoding.swift */,
+				739032D41F8550EC30A394B09C515E7F /* Request.swift */,
+				DAAA13720190A665C7062AE939A10AF6 /* Response.swift */,
+				27E6F42A107F70402DA8FB25E3C7245C /* ResponseSerialization.swift */,
+				0BC9BA919A4218125B7AAE78F8D0BC98 /* Result.swift */,
+				EFCBE0FC9331A3F017B80B04F80172EA /* ServerTrustPolicy.swift */,
+				9E4BB5B4B99C185E7E6F8A002D0FDDE2 /* SessionDelegate.swift */,
+				279D8DF01055490B0E16085057D19FBA /* SessionManager.swift */,
+				BE6467819C81ADBAD58B0B6FF2F3BAA1 /* TaskDelegate.swift */,
+				319F99E299B4CE62B482A804B932E84C /* Timeline.swift */,
+				A7E1734BB30B59FFA48849E6B1C87DD8 /* Validation.swift */,
+				CC3400E9E0C7BE2BCF3EB171C67DB1BB /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		9D5C1FBF24CEBE13AA2CF728AE4CFBAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD8530AE7F62157A19BB69DCA7D63355 /* libAlamofire.a */,
+				B028FFD5065A8A67507516DF1BA29D2A /* libPods-getting-started-ios-sdk.a */,
+				CE792C936A68480225362CAA8FEACBB0 /* libSmartcarAuth.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3F734CD086A968883244EBC3EF68D7A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B51962220BB958972E79B3AFD9F45C3 /* Pods-getting-started-ios-sdk */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CC3400E9E0C7BE2BCF3EB171C67DB1BB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				77CDDD80FE6BAF2E50B8E47285E023C3 /* Alamofire.modulemap */,
+				9C17D663E2CFCAC78F3267952C6686C1 /* Alamofire.xcconfig */,
+				577BB5DA21E677C388012E242C459B17 /* Alamofire-dummy.m */,
+				DAA91A1866C3642A1DCD9FEB0782955A /* Alamofire-prefix.pch */,
+				C995E70EB881B7D0B23ECF5C6411700F /* Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				4A0B33110355D9C202C33331E2FDF47A /* Pods */,
+				9D5C1FBF24CEBE13AA2CF728AE4CFBAA /* Products */,
+				C3F734CD086A968883244EBC3EF68D7A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		619626DF880E086ED913A678322B9355 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A144D7447184B4E6347DC020132C7315 /* SmartcarAuth-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE897F63E9832B7859DF700D1DACABB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44E5669195C1AB51DA4B42D132345086 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		872EC5D0CB361C7FEE52103E13FB4A17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23E7627F6FD41428783FC32AF500239 /* Pods-getting-started-ios-sdk-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2C3EA339723D774EBAD3008FDE6EB10D /* SmartcarAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57816243CE178F30F333BEF1EB887E98 /* Build configuration list for PBXNativeTarget "SmartcarAuth" */;
+			buildPhases = (
+				619626DF880E086ED913A678322B9355 /* Headers */,
+				72D43F1B150340FD3C926AB57ADE06C7 /* Sources */,
+				D4BF6F2717CE38348B61615518FCD939 /* Frameworks */,
+				A232313D5448BE5DC4C1B71DBB6961C8 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartcarAuth;
+			productName = SmartcarAuth;
+			productReference = CE792C936A68480225362CAA8FEACBB0 /* libSmartcarAuth.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F4D8460531B09D9A74533900AD241700 /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83E9477F5C93C367B958FCF3053EE2D5 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				6EE897F63E9832B7859DF700D1DACABB /* Headers */,
+				61E4DB2024607AD7CA4A4FAE1FF78DBE /* Sources */,
+				92B95E87A2681FB8D38FE6CAE1DA0009 /* Frameworks */,
+				28C943094FC8F19FBDEDA75692A73C5D /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = CD8530AE7F62157A19BB69DCA7D63355 /* libAlamofire.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FA8C2CA08A2B38088F510B5248EAE3FD /* Pods-getting-started-ios-sdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3B282C2FC74BAD3CA0762B9A5EA9912 /* Build configuration list for PBXNativeTarget "Pods-getting-started-ios-sdk" */;
+			buildPhases = (
+				872EC5D0CB361C7FEE52103E13FB4A17 /* Headers */,
+				AE78E826E93205584385D0D53AAE1DE6 /* Sources */,
+				21CB9F3E6DF86D415C5FA8C2383496D4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CC59A8283257A64A5D51F19F964D0AD /* PBXTargetDependency */,
+				B68F0E5635B58ED8ADB328C575DA58F3 /* PBXTargetDependency */,
+			);
+			name = "Pods-getting-started-ios-sdk";
+			productName = "Pods-getting-started-ios-sdk";
+			productReference = B028FFD5065A8A67507516DF1BA29D2A /* libPods-getting-started-ios-sdk.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9D5C1FBF24CEBE13AA2CF728AE4CFBAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4D8460531B09D9A74533900AD241700 /* Alamofire */,
+				FA8C2CA08A2B38088F510B5248EAE3FD /* Pods-getting-started-ios-sdk */,
+				2C3EA339723D774EBAD3008FDE6EB10D /* SmartcarAuth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28C943094FC8F19FBDEDA75692A73C5D /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire.modulemap",
+				"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+		A232313D5448BE5DC4C1B71DBB6961C8 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/SmartcarAuth/SmartcarAuth.modulemap",
+				"${PODS_ROOT}/Headers/Public/SmartcarAuth/SmartcarAuth-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/SmartcarAuth-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SmartcarAuth/SmartcarAuth.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SmartcarAuth/SmartcarAuth-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61E4DB2024607AD7CA4A4FAE1FF78DBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F100F738A340780B4C86C6D10AF7F0EE /* AFError.swift in Sources */,
+				AC64B0F7E0C0A01AF03984E6ED9CE529 /* Alamofire-dummy.m in Sources */,
+				A2C5600C37504535771CFDC78C7E8522 /* Alamofire.swift in Sources */,
+				A8D4EB2BC77E03F7CD9667FD097590DF /* DispatchQueue+Alamofire.swift in Sources */,
+				01D7C4F64D7CFAD0D3449FD0E9148CA2 /* MultipartFormData.swift in Sources */,
+				AD3078722FBB3C9437FEE8766EB7931D /* NetworkReachabilityManager.swift in Sources */,
+				D7DBF20C1AD8F9D2B1DC175498F48B70 /* Notifications.swift in Sources */,
+				089E0855D492AA75EDE128ECAB2D8DE8 /* ParameterEncoding.swift in Sources */,
+				5B7D03764E70EDF352E925E944621267 /* Request.swift in Sources */,
+				F198A805C56CE26BF4540420171FA682 /* Response.swift in Sources */,
+				A938CE13F0474CDBEA4B257892C71D01 /* ResponseSerialization.swift in Sources */,
+				5BB972084B353D9B128F0F611599E5BB /* Result.swift in Sources */,
+				B1828624B7D1908635EE541D7C8531DC /* ServerTrustPolicy.swift in Sources */,
+				3CF594EACD8E9BFC65FC9E8BE9263419 /* SessionDelegate.swift in Sources */,
+				4C98CA0597F576A1B63ED6699DF9F9A1 /* SessionManager.swift in Sources */,
+				28A69A8EB6BF8C4D2CFDF332CC028C28 /* TaskDelegate.swift in Sources */,
+				D3D0BAC2F595E90AAD24FD34AEAC6E16 /* Timeline.swift in Sources */,
+				86A769DC9F05E9EEE3AC7C68186E4D46 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72D43F1B150340FD3C926AB57ADE06C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F5B81A53D8EDD45A6580F78C337030 /* AuthorizationError.swift in Sources */,
+				0AE27BD14EEC9BA21CC2E9E1ADFAE25E /* SmartcarAuth-dummy.m in Sources */,
+				7674125C181CDE8B9FE4B85313B79AEC /* SmartcarAuth.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE78E826E93205584385D0D53AAE1DE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45135ADCC9A904CF394CE13E8680048 /* Pods-getting-started-ios-sdk-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CC59A8283257A64A5D51F19F964D0AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = F4D8460531B09D9A74533900AD241700 /* Alamofire */;
+			targetProxy = BFFA2941595F5D09FA3944365FCE7A1E /* PBXContainerItemProxy */;
+		};
+		B68F0E5635B58ED8ADB328C575DA58F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SmartcarAuth;
+			target = 2C3EA339723D774EBAD3008FDE6EB10D /* SmartcarAuth */;
+			targetProxy = 4D7F93FB448A528C531364543686918C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		041FD3B46A21D2A2FBB96B1A8F2A1466 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1D6DCCE979E9BBFB97E0B6B056062B1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C17D663E2CFCAC78F3267952C6686C1 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/Alamofire/Alamofire.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D2C3A7F9CB0C7AD4FBEA3657F104047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5FF10B5A272A97E8AC490D617A8DC6BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9D2B054B743FAD9E4DB0F279B9A4E7A /* Pods-getting-started-ios-sdk.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-getting-started-ios-sdk/Pods-getting-started-ios-sdk.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79C7BB43C8B6E6172B0EE670DBF87AD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 745C1523F9A0912319F523ED8BD5DF24 /* Pods-getting-started-ios-sdk.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-getting-started-ios-sdk/Pods-getting-started-ios-sdk.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98480A62997D657D5571E054E9A62337 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96A147D8682CB02DF9A86F4AB92236FC /* SmartcarAuth.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SmartcarAuth/SmartcarAuth-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/SmartcarAuth/SmartcarAuth.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SmartcarAuth;
+				PRODUCT_NAME = SmartcarAuth;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B26360934E35E738D17B14180C6893A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C17D663E2CFCAC78F3267952C6686C1 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/Alamofire/Alamofire.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E07438CE21FDD128956B4AE8B1FA5E64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96A147D8682CB02DF9A86F4AB92236FC /* SmartcarAuth.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SmartcarAuth/SmartcarAuth-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/SmartcarAuth/SmartcarAuth.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SmartcarAuth;
+				PRODUCT_NAME = SmartcarAuth;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2C3A7F9CB0C7AD4FBEA3657F104047 /* Debug */,
+				041FD3B46A21D2A2FBB96B1A8F2A1466 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57816243CE178F30F333BEF1EB887E98 /* Build configuration list for PBXNativeTarget "SmartcarAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98480A62997D657D5571E054E9A62337 /* Debug */,
+				E07438CE21FDD128956B4AE8B1FA5E64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83E9477F5C93C367B958FCF3053EE2D5 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B26360934E35E738D17B14180C6893A0 /* Debug */,
+				1D6DCCE979E9BBFB97E0B6B056062B1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3B282C2FC74BAD3CA0762B9A5EA9912 /* Build configuration list for PBXNativeTarget "Pods-getting-started-ios-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FF10B5A272A97E8AC490D617A8DC6BE /* Debug */,
+				79C7BB43C8B6E6172B0EE670DBF87AD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

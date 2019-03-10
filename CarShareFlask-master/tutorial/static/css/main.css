@@ -1,0 +1,68 @@
+* {
+    color: black; 
+    font-family: 'Quicksand', sans-serif;
+}
+
+.jumbotron {
+    padding-top: 6em;
+    background: url({{ url_for('static', filename='img/tesla.jpg') }});
+    background-repeat: no-repeat;
+    background-size: 100em;
+    margin-bottom: 0em;
+}
+
+.jumbotron1 {
+    position: relative;
+    background: url({{ url_for('static', filename='img/tesla.jpg') }});
+    background-repeat: no-repeat;
+    background-size: 120vw;
+    padding-top: 10em;
+    padding-bottom: 3.0em;
+}
+
+.home {
+    height: 39em;
+}
+
+form {
+    width: 20em;
+    padding: 1em;
+}
+
+.search {
+    border-radius: 7px;
+}
+
+.result {
+    border-radius: 7px;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .jumbotron1 {
+        background-size: 100vw;
+    }
+
+    .search {
+        margin-top: 2em;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+.card {
+    margin-top: 1.7em;
+    margin-left: 1.9em;
+    margin-right: 1em;
+}
+
+.card > img {
+    height: 11em;
+    overflow: hidden;
+}
+
+#map {
+    height: 100%;
+}

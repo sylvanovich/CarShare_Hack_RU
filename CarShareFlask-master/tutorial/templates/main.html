@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Dosis|Quicksand" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="/JavaScript/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3XfuMJJGzaU8TUItQM7XWD4esZdbpgtA&libraries=places"></script>
+
+    <title>Car Share</title>
+  </head>
+  <body>
+    <!--NAV BAR-->
+    <div id="1" class="home page-section">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light fixed-top">
+
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" ></span>
+          </button>
+          
+          <form action="/home" method="get">
+          <a class="navbar-brand" style="font-size: 1.2em;" href="#1">CAR share</a>
+          </form>
+      
+          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav mr-auto" style="padding: 1em;">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="#1">Home<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#2">Share your ride</a>
+                  </li>
+                  <li class="nav-item">
+                          <a class="nav-link" href="#3">Learn more</a>
+                  </li>
+                  <li class="nav-item">
+                          <a class="nav-link" href="#4">Login</a>
+                  </li>
+                  <li class="nav-item">
+                          <a class="nav-link" href="#5">Sign up</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+
+        <!--Landing Page-->
+        <div class="jumbotron1 home">
+          <div class="container text-white">
+            <div class="row">
+              <div class="col-sm bg-light search shadow-lg">
+                <form action="/cars" method="get">
+                  <p style="font-size: 1.75em;" class="">
+                    Find your dream ride for your dream vacation
+                  </p>
+
+                  <div class="form-group">
+                    <label for="pac-input">Where</label>
+                    <input class="form-control" id="searchTextField" placeholder="Enter a location"/>
+                  </div>
+
+                  <div class="row">
+                      <div class="form-group col">
+                        <label for="InputPickUp">Pick-Up Date</label>
+                        <input class="form-control" id="datepicker1" placeholder="mm/dd/yyyy"/>
+                      </div>
+
+                      <script>
+                          $('#datepicker1').datepicker({
+                              uiLibrary: 'bootstrap4'
+                          });
+                      </script>
+
+                      <div class="form-group col">
+                        <label for="InputDropOff">Drop-Off Date</label>
+                        <input class="form-control" id="datepicker2" placeholder="mm/dd/yyyy"/>
+                    
+                      </div>
+
+                      <script>
+                          $('#datepicker2').datepicker({
+                              uiLibrary: 'bootstrap4'
+                          });
+                      </script>
+                  </div>
+                  
+                  <button type="submit" class="btn-lg btn-primary"><class="text-white" style="text-decoration: none;">Search</a></button>
+                </form>
+            </div>
+              <div class="col-sm">
+              </div>
+              <div class="col-sm">
+              </div>
+          </div>
+        </div>   
+      </div>  
+    </div> 
+    
+    <div class="container">
+      <footer style="padding: 1em;">
+        <p>© Copyright Car Share 2019-20</p>
+      </footer>
+    </div>
+
+    <!-- Optional JavaScript --> 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
